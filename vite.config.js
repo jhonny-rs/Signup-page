@@ -5,3 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+
+const config = {
+  build: {
+    rollupOptions: {
+      external: ['@fortawesome/react-fontawesome']
+    }
+  }
+};
+
+export default config;
